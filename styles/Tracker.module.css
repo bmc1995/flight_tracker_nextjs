@@ -1,0 +1,35 @@
+.flightData {
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.flightData__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_center {
+  text-align: center;
+}
+.line {
+  position: relative;
+  width: 90%;
+  margin: 25px auto;
+  height: 0;
+  border-bottom: 2px solid black;
+}
+
+.line::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid black;
+  position: absolute;
+  right: -10px;
+  top: -8px;
+}
